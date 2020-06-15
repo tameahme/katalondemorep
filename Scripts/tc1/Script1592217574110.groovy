@@ -15,3 +15,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('flipkart.com')
+
+WebUI.setText(findTestObject('Os2/User_Name'), '9701455013')
+
+WebUI.maximizeWindow()
+
+WebUI.setText(findTestObject('Os2/Upassword'), 'tam143EEM')
+
+WebUI.click(findTestObject('Os2/Login'))
+
+WebUI.mouseOver(findTestObject('Os2/name_over'))
+
+WebUI.click(findTestObject('Os2/Logout'))
+
+WebUI.delay(10)
+
+WebUI.closeBrowser()
+
