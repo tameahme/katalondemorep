@@ -22,7 +22,7 @@ WebUI.click(findTestObject('Object Repository/flipkart/Login_Button'))
 String error=WebUI.getText(findTestObject('Object Repository/flipkart/Login_Error'))
 
 System.out.println(error)
-if(error == "Your username or password is incorrec")
+if(error == "Your username or password is incorrect")
 	{
 		WebUI.setText(findTestObject('Object Repository/flipkart/Login_Pwd'), "tam143EEM")
 		WebUI.click(findTestObject('Object Repository/flipkart/Login_Button'))

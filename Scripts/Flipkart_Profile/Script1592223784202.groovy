@@ -15,3 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser("https://flipkart.com")
+WebUI.maximizeWindow()
+WebUI.setText(findTestObject('Object Repository/flipkart/Login_Username'), "9701455013")
+WebUI.setText(findTestObject('Object Repository/flipkart/Login_Pwd'), "tam143EEM")
+WebUI.click(findTestObject('Object Repository/flipkart/Login_Button'))
